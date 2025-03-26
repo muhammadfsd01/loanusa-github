@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoanUSA - Get Instant Loans Up to 5 Lakh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Logo Styles */
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #003366, #0066cc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo::before {
+            content: "₹";
+            font-size: 40px;
+            margin-right: 10px;
+            background: linear-gradient(45deg, #003366, #0066cc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background: linear-gradient(90deg, #003366, #0066cc);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00ccff;
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1582407947304-fd86f028f716');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styles */
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin: 40px auto;
+            max-width: 600px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .btn {
+            background: #0066cc;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #003366;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">LoanUSA</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#eligibility">Eligibility</a></li>
+            <li><a href="#debit">Debit Card</a></li>
+            <li><a href="#ach">ACH</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Get Instant Loans Up to ₹5 Lakh</h1>
+        <p>No Collateral Required | Quick Approval | Low Interest Rates</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Eligibility Verification -->
+        <section id="eligibility" class="form-container">
+            <h2>Check Your Eligibility</h2>
+            <form>
+                <div class="form-group">
+                    <label>Monthly Income</label>
+                    <input type="number" required>
+                </div>
+                <div class="form-group">
+                    <label>Employment Type</label>
+                    <select required>
+                        <option value="">Select</option>
+                        <option>Salaried</option>
+                        <option>Self-Employed</option>
+                    </select>
+                </div>
+                <button class="btn">Check Eligibility</button>
+            </form>
+        </section>
+
+        <!-- Debit Card Verification -->
+        <section id="debit" class="form-container">
+            <h2>Debit Card Verification</h2>
+            <form>
+                <div class="form-group">
+                    <label>Card Number</label>
+                    <input type="text" pattern="[0-9]{16}" required>
+                </div>
+                <div class="form-group">
+                    <label>Expiry Date</label>
+                    <input type="month" required>
+                </div>
+                <div class="form-group">
+                    <label>CVV</label>
+                    <input type="text" pattern="[0-9]{3}" required>
+                </div>
+                <button class="btn">Verify Card</button>
+            </form>
+        </section>
+
+        <!-- ACH Verification -->
+        <section id="ach" class="form-container">
+            <h2>ACH Verification</h2>
+            <form>
+                <div class="form-group">
+                    <label>Bank Account Number</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>IFSC Code</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Account Holder Name</label>
+                    <input type="text" required>
+                </div>
+                <button class="btn">Verify Account</button>
+            </form>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-card">
+                <h3>Quick Approval</h3>
+                <p>Get loan approval within 24 hours</p>
+            </div>
+            <div class="feature-card">
+                <h3>No Guarantee</h3>
+                <p>Collateral-free loans up to ₹5 Lakh</p>
+            </div>
+            <div class="feature-card">
+                <h3>Low Interest</h3>
+                <p>Competitive rates starting at 10.99%</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Contact us: support@loanusa.com | Phone: 1800-123-456</p>
+        <p>© 2023 LoanUSA. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
