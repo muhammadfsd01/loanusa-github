@@ -1,0 +1,21 @@
+<ul class="about-list">
+                        <li>CRISIL/NSE AAA Rated Services</li>
+                        <li>RBI Registered NBFC</li>
+                        <li>256-bit SSL Secured Transactions</li>
+                        <li>24/7 Customer Support</li>
+                    </ul>
+
+                    <p>With cutting-edge technology and customer-centric approach, we've revolutionized the personal loan process, reducing approval times by 70% compared to traditional banks.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1554224155-3a58922a22c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Our Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rest of the existing content remains same -->
+
+    <!-- Existing styles and scripts remain same -->
+</body> 
+</html>
